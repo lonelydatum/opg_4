@@ -10,11 +10,12 @@ TweenLite.defaultEase = Power1.easeInOut;
 function start() {
 	var tl = new TimelineMax();
 	tl.set('.frame1', { opacity: 1 });
-	TweenMax.from('.bg', 10, { y: 0 });
+	TweenMax.from('.bg', 13, { y: 0 });
 
-	tl.from('.bar', .2, { width: 0 });
+	tl.add("start", "+=.5");
+	tl.from('.bar', .2, { width: 0 }, "start");
 
-	tl.add(sentence(list_1), "+=.1");
+	tl.add(sentence(list_1), "start");
 
 	tl.to('.t1', .3, { opacity: 0 }, "+=2");
 
