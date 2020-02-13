@@ -1,7 +1,7 @@
 
-const list_1 = ['.t1_a', '.t1_b', '.t1_c', '.t1_d']
-const list_2 = ['.t2_a', '.t2_b', '.t2_c', '.t2_d']
-const list_3 = ['.t3_a', '.t3_b', '.t3_c', '.t3_d']
+const list_1 = ['.tw_1', '.tw_2']
+const list_2 = ['.tw_3', '.tw_4']
+const list_3 = ['.tw_5', '.tw_6']
 
 
 TweenLite.defaultEase = Power1.easeInOut
@@ -30,9 +30,9 @@ function sentence(list){
 	const tl = new TimelineMax()
 	list.map((item, i)=>{
 
-		const delay = i * .15
+		const delay = i * .25
 		console.log(delay);
-		tl.from(item, .2, {opacity:0}, `+=${delay}`)		
+		tl.from(item, .1, {opacity:0}, `+=${delay}`)		
 	})
 
 	return tl

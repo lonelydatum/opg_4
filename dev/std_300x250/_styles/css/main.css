@@ -86,7 +86,7 @@ canvas {
   height: 250px;
   overflow: hidden;
   position: relative;
-  background-color: #00ace0;
+  background-color: #c9e7e7;
   -webkit-text-size-adjust: 100%;
   opacity: 1;
   cursor: pointer;
@@ -254,6 +254,26 @@ sup {
 
 .trace {
   opacity: .5;
+}
+
+.ctaHover {
+  transition: opacity .2s ease-in-out;
+  width: 97px;
+  height: 24px;
+  background-color: #6ebe44;
+  opacity: 0;
+  -webkit-transform: translate(23px, 202px);
+  -ms-transform: translate(23px, 202px);
+  transform: translate(23px, 202px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+#banner:hover .ctaHover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

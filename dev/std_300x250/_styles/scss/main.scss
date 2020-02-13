@@ -44,3 +44,17 @@
 .trace{
 	opacity: .5;
 }
+
+.ctaHover{
+	transition: opacity .2s ease-in-out;
+	width: 97px;
+	height: 24px;
+	background-color: #6ebe44;
+	// border: 1px solid red;
+	opacity: 0;
+	@include pos(23, 202);
+}
+
+#banner:hover .ctaHover{
+	opacity: 1;
+}
