@@ -23,7 +23,7 @@ function start() {
 
 	tl.add(sentence(list_3), "+=2");
 
-	tl.set([".t3", ".t2"], { filter: 'none' });
+	tl.set([".t3", ".t2"], { filter: 'none' }, 11);
 }
 
 function sentence(list) {
