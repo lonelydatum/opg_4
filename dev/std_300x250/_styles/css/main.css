@@ -225,7 +225,7 @@ sup {
 .bar {
   width: 28px;
   height: 6px;
-  background-color: #6ebe44;
+  background-color: #6c0;
   -webkit-transform: translate(27px, 46px);
   -ms-transform: translate(27px, 46px);
   transform: translate(27px, 46px);
@@ -260,7 +260,7 @@ sup {
   transition: opacity .2s ease-in-out;
   width: 97px;
   height: 24px;
-  background-color: #6ebe44;
+  background-color: #6c0;
   opacity: 0;
   -webkit-transform: translate(23px, 202px);
   -ms-transform: translate(23px, 202px);
