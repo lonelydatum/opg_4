@@ -47,12 +47,12 @@
 
 .ctaHover{
 	transition: opacity .2s ease-in-out;
-	width: 97px;
+	width: 99px;
 	height: 24px;
 	background-color: #6c0;
 	// border: 1px solid red;
 	opacity: 0;
-	@include pos(23, 202);
+	@include pos(599, 11);
 }
 
 #banner:hover .ctaHover{
