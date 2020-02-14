@@ -1,5 +1,5 @@
 
-const list_a1 = ['.ta_1']
+let list_a1 = ['.ta_1']
 const list_a2 = ['.ta_2', '.ta_3']
 const list_a3 = ['.ta_4', '.ta_5']
 
@@ -28,9 +28,11 @@ function start(){
 	tl.add("start", "+=.3")
 	tl.from('.bar1', .2, {width:0}, "start")
 
-	tl.add(sentence(list_a1), "start")
-	tl.add(sentence(list_a2), `+=.4`)
-	tl.add(sentence(list_a3), `+=.4`)
+	tl.add(sentence(list_a1.concat(list_a2).concat(list_a3)), "+=.3")
+
+	// console.log(list_a1.concat(list_a2).concat(list_a3));
+	// tl.add(sentence(list_a2), `+=.4`)
+	// tl.add(sentence(list_a3), `+=.4`)
 
 
 	tl.add("end", 5)
@@ -40,9 +42,9 @@ function start(){
 	
 
 	tl.from('.bar2', .2, {width:0}, "+=.5")
-	tl.add(sentence(list_b1), `+=.1`)
-	tl.add(sentence(list_b2), `+=.2`)
-	tl.add(sentence(list_b3), `+=.2`)
+	tl.add(sentence(list_b1.concat(list_b2).concat(list_b3)), `+=.3`)
+	// tl.add(sentence(list_b2), `+=.2`)
+	// tl.add(sentence(list_b3), `+=.2`)
 	
 
 	// tl.set([".t3", ".t2"], {filter:'none'}, 11)
@@ -51,7 +53,7 @@ function start(){
 function sentence(list){
 	const tl = new TimelineMax()
 	list.map((item, i)=>{
-		const delay = i * .1
+		const delay = i * .05
 		tl.from(item, .1, {opacity:0}, `+=${delay}`)		
 	})
 	return tl
