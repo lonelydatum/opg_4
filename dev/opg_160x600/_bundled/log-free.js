@@ -11,7 +11,7 @@ var list_b1 = ['.tb_1'];
 var list_b2 = ['.tb_2'];
 var list_b3 = ['.tb_3', '.tb_4', '.tb_5'];
 
-var obj = { y: "-=10", opacity: 0 };
+var obj = { y: "-=15", opacity: 0 };
 var delay = "+=.15";
 var time = .22;
 

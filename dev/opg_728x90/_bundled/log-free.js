@@ -11,7 +11,7 @@ var list_b1 = ['.tb_1', '.tb_2', '.tb_3', '.tb_4', '.tb_5', '.tb_6', '.tb_7', '.
 // const list_b2 = ['.tb_4', '.tb_5']
 // const list_b3 = ['.tb_6', '.tb_7', '.tb_8']
 
-var obj = { y: "-=10", opacity: 0 };
+var obj = { y: "-=15", opacity: 0 };
 var delay = "+=.15";
 var time = .25;
 

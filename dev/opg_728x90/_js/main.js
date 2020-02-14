@@ -10,7 +10,7 @@ const list_b1 = ['.tb_1', '.tb_2', '.tb_3', '.tb_4', '.tb_5', '.tb_6', '.tb_7', 
 
 
 
-const obj = {y:"-=10", opacity:0}
+const obj = {y:"-=15", opacity:0}
 const delay = "+=.15"
 const time = .25
 
