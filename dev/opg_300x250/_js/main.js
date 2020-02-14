@@ -8,7 +8,9 @@ const list_b3 = ['.tb_5', '.tb_6', '.tb_7']
 
 const list_b4 = ['.tb_8']
 
-
+const obj = {y:"-=10", opacity:0}
+const delay = "+=.15"
+const time = .25
 
 TweenLite.defaultEase = Power1.easeInOut
 
@@ -21,14 +23,14 @@ function start(){
 	tl.add("start", "+=.3")
 	tl.from('.bar', .2, {width:0}, "start")
 
-	tl.from(".line_1", .2, {opacity:0}, "+=.2")
-	tl.from(".line_2", .2, {opacity:0}, "+=.5")
+	tl.from(".line_1", time, {...obj}, "+=.2")
+	tl.from(".line_2", time, {...obj}, "+=.5")
 
 	tl.to('.ta', .2, {opacity:0}, "+=1.2")
 
-	tl.from(".line_3", .2, {opacity:0}, "+=.1")
-	tl.from(".line_4", .2, {opacity:0}, "+=1.1")
-	tl.from(".line_5", .2, {opacity:0}, "+=.8")
+	tl.from(".line_3", time, {...obj}, "+=.1")
+	tl.from(".line_4", time, {...obj}, "+=1.1")
+	tl.from(".line_5", time, {...obj}, "+=.8")
 	// tl.add(sentence(list_b2), `+=${.3}`)
 	// tl.add(sentence(list_b3), `+=${pause}`)
 	// tl.add(sentence(list_b4), `+=${.6}`)

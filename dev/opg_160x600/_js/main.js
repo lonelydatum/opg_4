@@ -10,7 +10,9 @@ const list_b3 = ['.tb_3', '.tb_4', '.tb_5']
 
 
 
-
+const obj = {y:"-=10", opacity:0}
+const delay = "+=.15"
+const time = .22
 
 TweenLite.defaultEase = Power1.easeInOut
 
@@ -28,7 +30,13 @@ function start(){
 	tl.add("start", "+=.3")
 	tl.from('.bar1', .2, {width:0}, "start")
 
-	tl.add(sentence(list_a1.concat(list_a2).concat(list_a3)), "+=.3")
+	tl.from(".tw_1", time, {...obj}, delay)
+	tl.from(".tw_2", time, {...obj}, delay)
+	tl.from(".tw_3", time, {...obj}, delay)
+	tl.from(".tw_4", time, {...obj}, delay)
+
+	// tl.add(sentence(list_a1.concat(list_a2).concat(list_a3)), "+=.3")
+
 
 	// console.log(list_a1.concat(list_a2).concat(list_a3));
 	// tl.add(sentence(list_a2), `+=.4`)
@@ -42,7 +50,13 @@ function start(){
 	
 
 	tl.from('.bar2', .2, {width:0}, "+=.5")
-	tl.add(sentence(list_b1.concat(list_b2).concat(list_b3)), `+=.3`)
+
+	tl.from(".tw_5", time, {...obj}, delay)
+	tl.from(".tw_6", time, {...obj}, delay)
+	tl.from(".tw_7", time, {...obj}, delay)
+	tl.from(".tw_8", time, {...obj}, delay)
+
+	// tl.add(sentence(list_b1.concat(list_b2).concat(list_b3)), `+=.3`)
 	// tl.add(sentence(list_b2), `+=.2`)
 	// tl.add(sentence(list_b3), `+=.2`)
 	
