@@ -218,17 +218,17 @@ sup {
 #banner {
   font-size: 20px;
   color: #333;
-  width: 300px;
-  height: 250px;
+  width: 728px;
+  height: 90px;
 }
 
 .bar {
-  width: 28px;
-  height: 6px;
+  width: 5px;
+  height: 31px;
   background-color: #6c0;
-  -webkit-transform: translate(27px, 46px);
-  -ms-transform: translate(27px, 46px);
-  transform: translate(27px, 46px);
+  -webkit-transform: translate(27px, 27px);
+  -ms-transform: translate(27px, 27px);
+  transform: translate(27px, 27px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -242,9 +242,9 @@ sup {
 }
 
 .bg {
-  -webkit-transform: translate(0px, -276px);
-  -ms-transform: translate(0px, -276px);
-  transform: translate(0px, -276px);
+  -webkit-transform: translate(0px, -230px);
+  -ms-transform: translate(0px, -230px);
+  transform: translate(0px, -230px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;

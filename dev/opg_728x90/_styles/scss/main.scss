@@ -13,17 +13,17 @@
 #banner{
 	font-size: 20px;
 	color: #333;
-	width: 300px;
-	height: 250px;
+	width: 728px;
+	height: 90px;
 }
 
 
 .bar{
-	width: 28px;
-	height: 6px;
+	width: 5px;
+	height: 31px;
 	background-color: #6c0;
 	// border: 1px solid red;
-	@include pos(27, 46);
+	@include pos(27, 27);
 }
 
 
@@ -33,7 +33,7 @@
 }
 
 .bg{
-	@include pos(0, -276);
+	@include pos(0, -230);
 }
 
 
