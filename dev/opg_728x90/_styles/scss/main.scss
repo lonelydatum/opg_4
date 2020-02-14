@@ -1,0 +1,60 @@
+
+
+@import '../../../_common/styles/common.scss';
+
+
+
+.frame1 {
+	// opacity: 1;
+}
+
+
+
+#banner{
+	font-size: 20px;
+	color: #333;
+	width: 300px;
+	height: 250px;
+}
+
+
+.bar{
+	width: 28px;
+	height: 6px;
+	background-color: #6c0;
+	// border: 1px solid red;
+	@include pos(27, 46);
+}
+
+
+.glow{
+	-webkit-filter: drop-shadow(0px 0px 12px #1a6889);
+	filter: drop-shadow(0px 0px 12px #1a6889);
+}
+
+.bg{
+	@include pos(0, -276);
+}
+
+
+// .t1{
+// 	opacity: 0;
+// }
+
+.trace{
+	opacity: .5;
+}
+
+.ctaHover{
+	transition: opacity .2s ease-in-out;
+	width: 97px;
+	height: 24px;
+	background-color: #6c0;
+	// border: 1px solid red;
+	opacity: 0;
+	@include pos(23, 202);
+}
+
+#banner:hover .ctaHover{
+	opacity: 1;
+}

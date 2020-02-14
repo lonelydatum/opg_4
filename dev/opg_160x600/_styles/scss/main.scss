@@ -1,0 +1,66 @@
+
+
+@import '../../../_common/styles/common.scss';
+
+
+
+.frame1 {
+	// opacity: 1;
+}
+
+
+
+#banner{
+	font-size: 20px;
+	color: #333;
+	width: 160px;
+	height: 600px;
+}
+
+
+.bar{
+	width: 28px;
+	height: 5px;
+	background-color: #6c0;
+	// border: 1px solid red;	
+}
+
+.bar1{
+	@include pos(17, 42);
+}
+.bar2{
+	@include pos(17, 332);
+}
+
+
+.glow{
+	-webkit-filter: drop-shadow(0px 0px 12px #1a6889);
+	filter: drop-shadow(0px 0px 12px #1a6889);
+}
+
+.bg{
+	@include pos(-174, 0);
+}
+
+.bg2{
+	@include pos(-135, 0);
+}
+
+
+.trace{
+	// opacity: .5;
+}
+
+.ctaHover{
+	transition: opacity .2s ease-in-out;
+	width: 124px;
+	height: 24px;
+	background-color: #6c0;
+	// border: 1px solid red;
+	opacity: 0;
+	@include pos(18,504);
+}
+
+#banner:hover .ctaHover{
+	opacity: 1;
+}

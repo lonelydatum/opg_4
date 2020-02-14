@@ -38,14 +38,11 @@ function start(){
 }
 
 function sentence(list){
-
 	const tl = new TimelineMax()
 	list.map((item, i)=>{
-
 		const delay = i * .1
 		tl.from(item, .1, {opacity:0}, `+=${delay}`)		
 	})
-
 	return tl
 }
 
